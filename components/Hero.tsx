@@ -49,8 +49,9 @@ export default function CallToActionWithAnnotation() {
           >
             <Button
               colorScheme={"blue"}
-              bg={"blue.400"}
-              rounded={"full"}
+              // bg={"blue.400"}
+              bgGradient= "linear(to-t,#8A2387,#E94057,#F27121)"
+              rounded={"xl"}
               px={6}
               _hover={{
                 bg: "blue.500",

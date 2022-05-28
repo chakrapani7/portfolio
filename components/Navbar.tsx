@@ -55,7 +55,7 @@ export default function Simple() {
             style={{ fontFamily: "Poppins" }}
           >
             <Avatar
-              name="Dan Abrahmov"
+              name="Sakkurthi Sashank"
               src="https://lh3.googleusercontent.com/a-/AOh14Gi-niaolq7-Wpc97EAD77WzhMpgcyHqeUD1q4Xdig=s360-p-rw-no"
             />
             <Box fontSize={{ base: "md", lg: "lg",xl:"xl" }}>Sakkurthi Sashank</Box>

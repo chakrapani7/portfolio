@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 const Home: NextPage = () => {
   return (
     <div>
-      <VStack>
+      <VStack spacing={16}>
         <VStack width={"full"} spacing={16}>
           <Navbar />
           <Hero />
