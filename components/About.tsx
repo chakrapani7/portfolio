@@ -7,10 +7,16 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import SrmApLogo from "../public/SrmApLogo.png";
-
+import NextTechLabLogo from "../public/NextTechLabLogo.png";
 export default function About() {
   return (
-    <VStack py={16} px={8} boxShadow={"xl"} rounded={"xl"}>
+    <VStack
+      py={16}
+      width={{ xl: "container.xl" }}
+      px={8}
+      boxShadow={"xl"}
+      rounded={"xl"}
+    >
       <Text
         as={"span"}
         position={"relative"}
@@ -36,7 +42,7 @@ export default function About() {
       <Stack
         bg={useColorModeValue("white", "gray.800")}
         py={16}
-        px={8}
+        // px={8}
         spacing={{ base: 8, md: 10 }}
         align={"center"}
         direction={"column"}
@@ -51,11 +57,11 @@ export default function About() {
         >
           Me a self-taught programmer who works Primarily on{" "}
           <span style={{ color: "#0ea5e9", fontWeight: "bold" }}>
-            Web Development
+            WebDevelopment
           </span>{" "}
           and{" "}
           <span style={{ color: "#0ea5e9", fontWeight: "bold" }}>
-            App Development
+            AppDevelopment
           </span>{" "}
           With A Passion for designing and Creating Amazing Products. As
           self-taught it is hard to find the resources and have a Good learning
@@ -92,17 +98,55 @@ export default function About() {
         py={16}
         align={"center"}
         direction={"row"}
+        px={{ base: 4, md: 0 }}
       >
         <Image src={SrmApLogo} />
         <Text
-          fontSize={{ base: "lg", md: "xl" }}
-          textAlign={"center"}
-          maxW={"3xl"}
+          fontSize={{ base: "md", md: "lg" }}
           fontFamily={"poppins"}
           fontWeight={"20px"}
           color={"#4b5563"}
         >
           CS Undergrad At SRM UNIVERSITY AP
+        </Text>
+      </Stack>
+      <Text
+        as={"span"}
+        position={"relative"}
+        fontWeight={600}
+        fontFamily={"poppins"}
+        fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
+        lineHeight={"110%"}
+        color={"#475569"}
+        _after={{
+          content: "''",
+          width: "full",
+          height: "5%",
+          position: "absolute",
+          bottom: 1,
+          left: 0,
+          bg: "red.400",
+          zIndex: -1,
+          borderRadius: 10,
+        }}
+      >
+        Experience
+      </Text>
+      <Stack
+        bg={useColorModeValue("white", "gray.800")}
+        py={16}
+        align={"center"}
+        direction={"row"}
+        px={{ base: 4, md: 0 }}
+      >
+        <Image src={NextTechLabLogo} />
+        <Text
+          fontSize={{ base: "md", md: "lg" }}
+          fontFamily={"poppins"}
+          fontWeight={"20px"}
+          color={"#4b5563"}
+        >
+          Web Research Associate NextTech Lab
         </Text>
       </Stack>
     </VStack>
