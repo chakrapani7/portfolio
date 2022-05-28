@@ -90,14 +90,12 @@ export default function About() {
       <Stack
         bg={useColorModeValue("white", "gray.800")}
         py={16}
-        px={8}
-        spacing={{ base: 8, md: 10 }}
         align={"center"}
         direction={"row"}
       >
-        <Image src={SrmApLogo}/>
+        <Image src={SrmApLogo} />
         <Text
-          fontSize={{ base: "md", md: "xl" }}
+          fontSize={{ base: "lg", md: "xl" }}
           textAlign={"center"}
           maxW={"3xl"}
           fontFamily={"poppins"}
