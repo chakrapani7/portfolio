@@ -59,7 +59,7 @@ export default function Simple() {
               name="Dan Abrahmov"
               src="https://lh3.googleusercontent.com/a-/AOh14Gi-niaolq7-Wpc97EAD77WzhMpgcyHqeUD1q4Xdig=s360-p-rw-no"
             />
-            <Box fontSize={23}>Sakkurthi Sashank</Box>
+            <Box fontSize={{ base: "md", lg: "lg",xl:"xl" }}>Sakkurthi Sashank</Box>
           </HStack>
           <HStack
             as={"nav"}
