@@ -38,7 +38,6 @@ export default function Simple() {
       <Box
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
-        pos="fixed"
         w="100%"
         px={4}
       >
