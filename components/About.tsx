@@ -8,7 +8,6 @@ export default function About() {
       py={16}
       width={{ xl: "container.xl" }}
       px={8}
-      boxShadow={"xl"}
       rounded={"xl"}
       bgColor={"white"}
       marginBottom="20"

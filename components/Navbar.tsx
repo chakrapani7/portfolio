@@ -90,7 +90,6 @@ export default function Simple() {
             fontSize={15}
             display={{ base: "none", md: "flex" }}
           >
-          
             <Socials />
           </HStack>
         </Flex>

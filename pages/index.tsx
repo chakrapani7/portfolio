@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 
 import Navbar from "../components/Navbar";
+import TechStack from "../components/TechStack";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
         </VStack>
         <VStack  width={"full"} height="full" bgColor={"#f3f4f6"} spacing={16}>
           <About />
+        </VStack>
+        <VStack>
+          <TechStack/>
         </VStack>
         <VStack width={"full"} height="full" spacing={16} bgColor="#f5f3ff">
          <Contact/>
