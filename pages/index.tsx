@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           <About />
         </VStack>
         <VStack width={"full"} height="full" spacing={16} bgColor="#f5f3ff">
-          <Contact />
+         
         </VStack>
       </VStack>
     </div>
