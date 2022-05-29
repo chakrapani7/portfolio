@@ -5,12 +5,12 @@ import NextTechLabLogo from "../public/NextTechLabLogo.png";
 export default function About() {
   return (
     <VStack
-      py={16}
+      py={{base:0,md:16}}
       width={{ xl: "container.xl" }}
-      px={8}
+      px={4}
       rounded={"xl"}
       bgColor={"white"}
-      marginBottom="20"
+      marginBottom={{base:0,md:20}}
       marginTop="20"
     >
       <Text

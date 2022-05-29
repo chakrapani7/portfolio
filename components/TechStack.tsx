@@ -83,10 +83,9 @@ export default function TechStack() {
       align={"center"}
       py={16}
       width={{ xl: "container.xl" }}
-      px={8}
       bgColor={"white"}
-      marginBottom="36"
-      marginTop="28"
+      marginBottom={{base:6,md:36}}
+      marginTop={{md:24}}
       spacing={20}
     >
       <Heading
