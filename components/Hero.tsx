@@ -53,6 +53,7 @@ export default function CallToActionWithAnnotation() {
               bgGradient= "linear(to-t,#8A2387,#E94057,#F27121)"
               rounded={"xl"}
               px={6}
+              marginBottom={{base:36,md:0}}
               _hover={{
                 bg: "linear(to-t,#8A2387,#E94057,#F27121)",
               }}

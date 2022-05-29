@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <Navbar />
           <Hero />
         </VStack>
-        <VStack  width={"full"} height="full" bgColor={"#f3f4f6"} spacing={16}>
+        <VStack  width={"full"} height="full" bgColor={{md:"#f3f4f6"}} spacing={16}>
           <About />
         </VStack>
         <VStack>
