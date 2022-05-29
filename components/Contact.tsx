@@ -25,8 +25,6 @@ export default function contact() {
     <Box margin={20} bg="">
       <Container
         maxW="full"
-        marginBottom="20"
-        marginTop="20"
         mt={0}
         centerContent
         overflow="hidden"
