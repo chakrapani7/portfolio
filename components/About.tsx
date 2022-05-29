@@ -3,7 +3,6 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Avatar,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import SrmApLogo from "../public/SrmApLogo.png";
@@ -16,6 +15,9 @@ export default function About() {
       px={8}
       boxShadow={"xl"}
       rounded={"xl"}
+      bgColor={"white"}
+      marginBottom="20"
+      marginTop="20"
     >
       <Text
         as={"span"}
