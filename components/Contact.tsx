@@ -22,7 +22,7 @@ import {
 
 export default function contact() {
   return (
-    <Box margin={20} bg="">
+    <Box bg="">
       <Container
         maxW="full"
         mt={0}
