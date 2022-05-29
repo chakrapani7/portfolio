@@ -22,13 +22,8 @@ import {
 
 export default function contact() {
   return (
-    <Box bg="">
-      <Container
-        maxW="full"
-        mt={0}
-        centerContent
-        overflow="hidden"
-      >
+    <Box bg="" margin={20}>
+      <Container maxW="full" mt={0} centerContent>
         <Flex>
           <Box
             bg="#334155"
@@ -36,7 +31,9 @@ export default function contact() {
             color="white"
             borderRadius="lg"
             boxShadow={"xl"}
-            m={{ sm: 4, md: 16, lg: 10 }}
+            marginBottom="20"
+            marginTop="20"
+            m={{ sm: 1, md: 16, lg: 10 }}
             p={{ sm: 5, md: 5, lg: 16 }}
           >
             <Box p={4}>
@@ -80,8 +77,8 @@ export default function contact() {
                       </VStack>
                     </Stack>
                     <HStack
-                      mt={{ lg: 10, md: 10 }}
-                      spacing={5}
+                      // mt={{ lg: 8, md: 8 }}
+                      spacing={{ base: 2, md: 6 }}
                       px={5}
                       alignItems="flex-start"
                     >
