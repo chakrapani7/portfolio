@@ -11,7 +11,7 @@ export default function About() {
       rounded={"xl"}
       bgColor={"white"}
       marginBottom={{base:0,md:20}}
-      marginTop="20"
+      marginTop="24"
     >
       <Text
         as={"span"}
