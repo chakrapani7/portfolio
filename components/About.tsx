@@ -7,7 +7,7 @@ export default function About() {
     <VStack
       py={{base:0,md:16}}
       width={{ xl: "container.xl" }}
-      px={4}
+      px={8}
       rounded={"xl"}
       bgColor={"white"}
       marginBottom={{base:0,md:20}}
