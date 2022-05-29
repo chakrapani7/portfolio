@@ -10,11 +10,12 @@ import {
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import HeroImage from "../public/HeroImage.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function CallToActionWithAnnotation() {
   return (
     <>
-      <Container maxW={"4xl"} >
+      <Container maxW={"4xl"}>
         <Stack align={"center"}>
           <Image src={HeroImage} width={250} height={250} />
         </Stack>
@@ -50,15 +51,27 @@ export default function CallToActionWithAnnotation() {
             <Button
               colorScheme={"red"}
               // bg={"blue.400"}
-              bgGradient= "linear(to-t,#8A2387,#E94057,#F27121)"
+              bgGradient="linear(to-t,#8A2387,#E94057,#F27121)"
               rounded={"xl"}
               px={6}
-              marginBottom={{base:36,md:0}}
+              marginBottom={{ base: 36, md: 0 }}
               _hover={{
                 bg: "linear(to-t,#8A2387,#E94057,#F27121)",
               }}
             >
-              See About Me
+              <Link
+                px={2}
+                py={1}
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                href={"#"}
+              >
+                See About Me
+              </Link>
+
               <ArrowDownIcon marginLeft={2} />
             </Button>
           </Stack>

@@ -26,7 +26,7 @@ export default function About() {
         borderColor="#d1d5db"
         padding="2"
       >
-        About Me
+        🙋‍♂️ About Me
       </Text>
       <Stack
         bg={useColorModeValue("white", "gray.800")}
@@ -73,7 +73,7 @@ export default function About() {
         borderColor="#d1d5db"
         padding="2"
       >
-        Education
+        ‍🎓 Education
       </Text>
       <Stack
         bg={useColorModeValue("white", "gray.800")}
@@ -82,7 +82,7 @@ export default function About() {
         direction={"row"}
         px={{ base: 4, md: 0 }}
       >
-        <Image src={SrmApLogo} />
+        <Image src={SrmApLogo} height={50} width={50} />
         <Text
           fontSize={{ base: "md", md: "lg" }}
           fontFamily={"poppins"}
@@ -105,7 +105,7 @@ export default function About() {
         borderColor="#d1d5db"
         padding="2"
       >
-        Experience
+        💼 Experience
       </Text>
       <Stack
         bg={useColorModeValue("white", "gray.800")}
@@ -114,7 +114,7 @@ export default function About() {
         direction={"row"}
         px={{ base: 4, md: 0 }}
       >
-        <Image src={NextTechLabLogo} />
+        <Image src={NextTechLabLogo} height={40} width={45} />
         <Text
           fontSize={{ base: "md", md: "lg" }}
           fontFamily={"poppins"}

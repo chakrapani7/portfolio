@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
@@ -11,6 +10,8 @@ import {
   Avatar,
   Divider,
 } from "@chakra-ui/react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import {
   BsLinkedin,
@@ -19,23 +20,7 @@ import {
   BsTwitter,
   BsInstagram,
 } from "react-icons/bs";
-
-const Links = ["Home", "About", "TechStack", "Contact Me"];
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
-    }}
-    href={"#"}
-  >
-    {children}
-  </Link>
-);
+import Socials from "./SocialIcon";
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -77,10 +62,42 @@ export default function Simple() {
             fontSize={15}
             display={{ base: "none", md: "flex" }}
           >
-            {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
-            ))}
-            {/* <Socials /> */}
+            <Link
+              px={2}
+              py={1}
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              href={"#"}
+            >
+              About
+            </Link>
+            <Link
+              px={2}
+              py={1}
+              activeClass="active"
+              to="techstack"
+              spy={true}
+              smooth={true}
+              duration={500}
+              href={"#"}
+            >
+              TechStack
+            </Link>
+            <Link
+              px={2}
+              py={1}
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              href={"#"}
+            >
+              Contact Me
+            </Link>
           </HStack>
           <HStack
             as={"nav"}
@@ -103,9 +120,42 @@ export default function Simple() {
             fontSize={15}
           >
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <Link key={link}>{link}</Link>
-              ))}
+              <Link
+                px={2}
+                py={1}
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                href={"#"}
+              >
+                About
+              </Link>
+              <Link
+                px={2}
+                py={1}
+                activeClass="active"
+                to="techstack"
+                spy={true}
+                smooth={true}
+                duration={500}
+                href={"#"}
+              >
+                TechStack
+              </Link>
+              <Link
+                px={2}
+                py={1}
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+                href={"#"}
+              >
+                Contact Me
+              </Link>
               <Socials />
             </Stack>
           </Box>
@@ -115,45 +165,3 @@ export default function Simple() {
     </>
   );
 }
-
-const Socials = () => {
-  return (
-    <HStack spacing={{ base: 1, md: 3 }} px={5} alignItems="flex-start">
-      <IconButton
-        aria-label="facebook"
-        variant="ghost"
-        size="lg"
-        isRound={true}
-        icon={<BsLinkedin size="28px" />}
-      />
-      <IconButton
-        aria-label="github"
-        variant="ghost"
-        size="lg"
-        isRound={true}
-        icon={<BsGithub size="28px" />}
-      />
-      <IconButton
-        aria-label="discord"
-        variant="ghost"
-        size="lg"
-        isRound={true}
-        icon={<BsDiscord size="28px" />}
-      />
-      <IconButton
-        aria-label="discord"
-        variant="ghost"
-        size="lg"
-        isRound={true}
-        icon={<BsTwitter size="28px" />}
-      />
-      <IconButton
-        aria-label="discord"
-        variant="ghost"
-        size="lg"
-        isRound={true}
-        icon={<BsInstagram size="28px" />}
-      />
-    </HStack>
-  );
-};

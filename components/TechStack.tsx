@@ -11,6 +11,7 @@ import {
   Icon,
   SimpleGrid,
   VStack,
+  Heading,
 } from "@chakra-ui/react";
 import { features } from "process";
 import {
@@ -38,42 +39,42 @@ const Tech = [
   {
     id: 2,
     title: "Python",
-    icon: <DiPython size={30} />,
+    icon: <DiPython size={30} color={"#475569"} />,
   },
   {
     id: 3,
     title: "JavaScript",
-    icon: <DiJavascript1 size={30} />,
+    icon: <DiJavascript1 size={30} color={"#475569"} />,
   },
   {
     id: 4,
     title: "Postgresql",
-    icon: <SiPostgresql size={30} />,
+    icon: <SiPostgresql size={30} color={"#475569"} />,
   },
   {
     id: 5,
     title: "MySQL",
-    icon: <DiMysql size={30} />,
+    icon: <DiMysql size={30} color={"#475569"} />,
   },
   {
     id: 6,
     title: "Django",
-    icon: <SiDjango size={20} />,
+    icon: <SiDjango size={20} color={"#475569"} />,
   },
   {
     id: 7,
     title: "Express Js",
-    icon: <SiExpress size={30} />,
+    icon: <SiExpress size={30} color={"#475569"} />,
   },
   {
     id: 8,
     title: "Git",
-    icon: <DiGit size={30} />,
+    icon: <DiGit size={30} color={"#475569"} />,
   },
   {
     id: 9,
     title: "React",
-    icon: <DiReact size={30} />,
+    icon: <DiReact size={30} color={"#475569"} />,
   },
 ];
 export default function TechStack() {
@@ -88,31 +89,29 @@ export default function TechStack() {
       marginTop="28"
       spacing={20}
     >
-      <Text
+      <Heading
         as={"span"}
         position={"relative"}
         fontWeight={600}
         fontFamily={"poppins"}
         fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
         lineHeight={"110%"}
-        color={"#475569"}
-        
+        color={"#0ea5e9"}
         textAlign={"center"}
-        
       >
-        TechStack
-      </Text>
+        💻 TechStack
+      </Heading>
       <Stack maxW={"5xl"} mt={10}>
         <SimpleGrid
-          templateColumns={{base:"repeat(2, 1fr)",md:"repeat(3, 1fr)"}}
-          gap={{base:10,md:20}}
+          templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }}
+          gap={{ base: 12, md: 20 }}
           columns={{ base: 1, md: 2, lg: 4 }}
         >
           {Tech.map((Tech: { id: any; title: any; icon: any }) => (
             <HStack key={Tech.id} align="center">
               <Box>{Tech.icon}</Box>
               <Text
-                fontSize={{ base: "md", md: "xl" }}
+                fontSize={{ base: "sm", md: "lg" }}
                 textAlign={"center"}
                 maxW={"3xl"}
                 fontFamily={"poppins"}
