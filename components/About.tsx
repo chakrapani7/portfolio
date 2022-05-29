@@ -16,7 +16,7 @@ export default function About() {
       boxShadow={"xl"}
       rounded={"xl"}
       bgColor={"white"}
-      marginBottom="20"
+marginBottom="20"
       marginTop="20"
     >
       <Text

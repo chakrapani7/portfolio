@@ -22,11 +22,9 @@ import {
 
 export default function contact() {
   return (
-    <Box margin={20} bg="">
+    <Box bg="">
       <Container
         maxW="full"
-        marginBottom="20"
-        marginTop="20"
         mt={0}
         centerContent
         overflow="hidden"
