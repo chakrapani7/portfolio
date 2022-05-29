@@ -60,8 +60,6 @@ export default function CallToActionWithAnnotation() {
               }}
             >
               <Link
-                px={2}
-                py={1}
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -69,6 +67,7 @@ export default function CallToActionWithAnnotation() {
                 duration={500}
                 href={"#"}
               >
+                <Box px={2} py={1}></Box>
                 See About Me
               </Link>
 

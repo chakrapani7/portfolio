@@ -63,8 +63,6 @@ export default function Simple() {
             display={{ base: "none", md: "flex" }}
           >
             <Link
-              px={2}
-              py={1}
               activeClass="active"
               to="about"
               spy={true}
@@ -72,11 +70,11 @@ export default function Simple() {
               duration={500}
               href={"#"}
             >
-              About
+              <Box px={2} py={1}>
+                About{" "}
+              </Box>
             </Link>
             <Link
-              px={2}
-              py={1}
               activeClass="active"
               to="techstack"
               spy={true}
@@ -84,11 +82,11 @@ export default function Simple() {
               duration={500}
               href={"#"}
             >
-              TechStack
+              <Box px={2} py={1}>
+                TechStack
+              </Box>
             </Link>
             <Link
-              px={2}
-              py={1}
               activeClass="active"
               to="contact"
               spy={true}
@@ -96,7 +94,9 @@ export default function Simple() {
               duration={500}
               href={"#"}
             >
-              Contact Me
+              <Box px={2} py={1}>
+                Contact Me
+              </Box>
             </Link>
           </HStack>
           <HStack
@@ -121,8 +121,6 @@ export default function Simple() {
           >
             <Stack as={"nav"} spacing={4}>
               <Link
-                px={2}
-                py={1}
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -130,11 +128,11 @@ export default function Simple() {
                 duration={500}
                 href={"#"}
               >
-                About
+                <Box px={2} py={1}>
+                  About
+                </Box>
               </Link>
               <Link
-                px={2}
-                py={1}
                 activeClass="active"
                 to="techstack"
                 spy={true}
@@ -142,11 +140,11 @@ export default function Simple() {
                 duration={500}
                 href={"#"}
               >
-                TechStack
+                <Box px={2} py={1}>
+                  TechStack
+                </Box>
               </Link>
               <Link
-                px={2}
-                py={1}
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -154,7 +152,9 @@ export default function Simple() {
                 duration={500}
                 href={"#"}
               >
-                Contact Me
+                <Box px={2} py={1}>
+                  Contact Me
+                </Box>
               </Link>
               <Socials />
             </Stack>
