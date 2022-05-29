@@ -12,8 +12,15 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import {
+  BsLinkedin,
+  BsGithub,
+  BsDiscord,
+  BsTwitter,
+  BsInstagram,
+} from "react-icons/bs";
 
-const Links = ["Home", "About", "TechStack", "Socials", "Contact Me"];
+const Links = ["Home", "About", "TechStack", "Contact Me"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -58,11 +65,13 @@ export default function Simple() {
               name="Sakkurthi Sashank"
               src="https://lh3.googleusercontent.com/a-/AOh14Gi-niaolq7-Wpc97EAD77WzhMpgcyHqeUD1q4Xdig=s360-p-rw-no"
             />
-            <Box fontSize={{ base: "md", lg: "lg",xl:"xl" }}>Sakkurthi Sashank</Box>
+            <Box fontSize={{ base: "md", lg: "lg", xl: "xl" }}>
+              Sakkurthi Sashank
+            </Box>
           </HStack>
           <HStack
             as={"nav"}
-            spacing={4}
+            spacing={10}
             fontFamily="Poppins"
             fontWeight="normal"
             fontSize={15}
@@ -71,6 +80,18 @@ export default function Simple() {
             {Links.map((link) => (
               <NavLink key={link}>{link}</NavLink>
             ))}
+            {/* <Socials /> */}
+          </HStack>
+          <HStack
+            as={"nav"}
+            spacing={10}
+            fontFamily="Poppins"
+            fontWeight="normal"
+            fontSize={15}
+            display={{ base: "none", md: "flex" }}
+          >
+          
+            <Socials />
           </HStack>
         </Flex>
 
@@ -86,6 +107,7 @@ export default function Simple() {
               {Links.map((link) => (
                 <Link key={link}>{link}</Link>
               ))}
+              <Socials />
             </Stack>
           </Box>
         ) : null}
@@ -94,3 +116,45 @@ export default function Simple() {
     </>
   );
 }
+
+const Socials = () => {
+  return (
+    <HStack spacing={{ base: 1, md: 3 }} px={5} alignItems="flex-start">
+      <IconButton
+        aria-label="facebook"
+        variant="ghost"
+        size="lg"
+        isRound={true}
+        icon={<BsLinkedin size="28px" />}
+      />
+      <IconButton
+        aria-label="github"
+        variant="ghost"
+        size="lg"
+        isRound={true}
+        icon={<BsGithub size="28px" />}
+      />
+      <IconButton
+        aria-label="discord"
+        variant="ghost"
+        size="lg"
+        isRound={true}
+        icon={<BsDiscord size="28px" />}
+      />
+      <IconButton
+        aria-label="discord"
+        variant="ghost"
+        size="lg"
+        isRound={true}
+        icon={<BsTwitter size="28px" />}
+      />
+      <IconButton
+        aria-label="discord"
+        variant="ghost"
+        size="lg"
+        isRound={true}
+        icon={<BsInstagram size="28px" />}
+      />
+    </HStack>
+  );
+};

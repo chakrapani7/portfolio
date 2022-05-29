@@ -22,7 +22,7 @@ import {
 
 export default function contact() {
   return (
-    <Box bg="" margin={20}>
+    <Box bg="" margin={28}>
       <Container maxW="full" mt={0} centerContent>
         <Flex>
           <Box
@@ -31,8 +31,8 @@ export default function contact() {
             color="white"
             borderRadius="lg"
             boxShadow={"xl"}
-            marginBottom="20"
-            marginTop="20"
+            // marginBottom="20"
+            // marginTop="20"
             m={{ sm: 1, md: 16, lg: 10 }}
             p={{ sm: 5, md: 5, lg: 16 }}
           >

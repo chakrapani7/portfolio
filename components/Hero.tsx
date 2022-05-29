@@ -48,13 +48,13 @@ export default function CallToActionWithAnnotation() {
             position={"relative"}
           >
             <Button
-              colorScheme={"blue"}
+              colorScheme={"red"}
               // bg={"blue.400"}
               bgGradient= "linear(to-t,#8A2387,#E94057,#F27121)"
               rounded={"xl"}
               px={6}
               _hover={{
-                bg: "blue.500",
+                bg: "linear(to-t,#8A2387,#E94057,#F27121)",
               }}
             >
               See About Me

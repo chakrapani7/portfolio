@@ -1,9 +1,4 @@
-import {
-  VStack,
-  Stack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { VStack, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import SrmApLogo from "../public/SrmApLogo.png";
 import NextTechLabLogo from "../public/NextTechLabLogo.png";
@@ -16,7 +11,7 @@ export default function About() {
       boxShadow={"xl"}
       rounded={"xl"}
       bgColor={"white"}
-marginBottom="20"
+      marginBottom="20"
       marginTop="20"
     >
       <Text
@@ -27,17 +22,10 @@ marginBottom="20"
         fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
         lineHeight={"110%"}
         color={"#475569"}
-        _after={{
-          content: "''",
-          width: "full",
-          height: "5%",
-          position: "absolute",
-          bottom: 1,
-          left: 0,
-          bg: "red.400",
-          zIndex: -1,
-          borderRadius: 10,
-        }}
+        border="1px"
+        rounded={"xl"}
+        borderColor="#d1d5db"
+        padding="2"
       >
         About Me
       </Text>
@@ -81,17 +69,10 @@ marginBottom="20"
         fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
         lineHeight={"110%"}
         color={"#475569"}
-        _after={{
-          content: "''",
-          width: "full",
-          height: "5%",
-          position: "absolute",
-          bottom: 1,
-          left: 0,
-          bg: "red.400",
-          zIndex: -1,
-          borderRadius: 10,
-        }}
+        border="1px"
+        rounded={"xl"}
+        borderColor="#d1d5db"
+        padding="2"
       >
         Education
       </Text>
@@ -120,17 +101,10 @@ marginBottom="20"
         fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
         lineHeight={"110%"}
         color={"#475569"}
-        _after={{
-          content: "''",
-          width: "full",
-          height: "5%",
-          position: "absolute",
-          bottom: 1,
-          left: 0,
-          bg: "red.400",
-          zIndex: -1,
-          borderRadius: 10,
-        }}
+        border="1px"
+        rounded={"xl"}
+        borderColor="#d1d5db"
+        padding="2"
       >
         Experience
       </Text>
